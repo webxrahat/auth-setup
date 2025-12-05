@@ -1,5 +1,2 @@
-/dist
-/.env
-.DS_Store
-/logs 
 /node_modules
+.env
