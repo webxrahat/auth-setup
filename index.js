@@ -26,10 +26,10 @@ const PORT = process.env.PORT || 3000;
 app.get("/api", (req, res) => {
   res.send("Hello, World!");
 });
-app.post("/login", (req, res) => {
+app.post("/api/login", (req, res) => {
   res.send("Hello, World!");
 });
-app.post("/register", (req, res) => {
+app.post("/api/register", (req, res) => {
   const { username, password } = req.body;
   const hashedPassword = bcrypt.hashSync(password, 10);
   res.send({ username, hashedPassword });
